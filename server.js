@@ -34,6 +34,7 @@ app.set('trust proxy', 1)
 const allowedOrigins = new Set([
   'https://unendangered-mia-graceful.ngrok-free.dev',
   'https://support.natemarcellus.com',
+  'https://careers.natemarcellus.com',
   'https://files.natemarcellus.com',
   'https://www.natemarcellus.com',
   'http://localhost:3000'
