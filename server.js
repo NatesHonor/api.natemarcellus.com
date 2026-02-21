@@ -27,6 +27,7 @@ const updateRoutes = require('./routes/updateRoutes')
 const paypalRoutes = require('./routes/paypalRoutes')
 const versionRoutes = require('./routes/versionRoutes')
 const downloadRoutes = require('./routes/downloadRoutes')
+const jobSubmitRoutes = require('./routes/jobSubmitRoutes')
 
 const app = express()
 app.set('trust proxy', 1)
@@ -160,7 +161,7 @@ app.use('/download', downloadRoutes)
 app.use('/user', validateToken, userRoutes)
 app.use('/tickets', validateToken, ticketRoutes)
 app.use('/careers', careerRoutes)
-
+app.use('/jobs/submit', jobSubmitRoutes)
 app.use(express.static('public', {
   maxAge: '1d',
   etag: true
