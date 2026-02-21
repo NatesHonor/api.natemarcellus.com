@@ -28,6 +28,7 @@ const paypalRoutes = require('./routes/paypalRoutes')
 const versionRoutes = require('./routes/versionRoutes')
 const downloadRoutes = require('./routes/downloadRoutes')
 const jobSubmitRoutes = require('./routes/jobSubmitRoutes')
+const captchaRoutes = require('./routes/captchaRoutes')
 
 const app = express()
 app.set('trust proxy', 1)
@@ -161,7 +162,8 @@ app.use('/download', downloadRoutes)
 app.use('/user', validateToken, userRoutes)
 app.use('/tickets', validateToken, ticketRoutes)
 app.use('/careers', careerRoutes)
-app.use('/jobs/submit', jobSubmitRoutes)
+app.use('/jobs/submit', csrfGuard, jobSubmitRoutes)
+app.use('/captcha', captchaRoutes)
 app.use(express.static('public', {
   maxAge: '1d',
   etag: true
