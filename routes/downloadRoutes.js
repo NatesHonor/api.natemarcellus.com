@@ -49,7 +49,7 @@ router.get('/:application/:version', async (req, res) => {
 
   const filenames =
     version === 'latest'
-      ? ['latest.exe', 'latest.zip']
+      ? ['latest.zip']
       : [`${version}.exe`, `${version}.zip`]
 
   let filePath = null
