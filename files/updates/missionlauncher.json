@@ -1,6 +1,6 @@
 {
   "version": "1.2.4",
-  "mandatory": true,
+  "mandatory": false,
   "url": "https://api.natemarcellus.com/download/MissionchiefLauncher/latest",
   "checksum": {
     "algorithm": "SHA256",
