@@ -1,0 +1,14 @@
+{
+  "version": "1.2.4",
+  "mandatory": true,
+  "url": "https://api.natemarcellus.com/download/MissionchiefLauncher/latest",
+  "checksum": {
+    "algorithm": "SHA256",
+    "value": "abc123def456..."
+  },
+  "signature": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A...",
+  "notes": [
+    "Fixed issue with launcher not displaying the config.ini",
+    "Fixed issue with playwright install"
+  ]
+}
