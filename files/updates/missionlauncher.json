@@ -7,8 +7,36 @@
     "value": "abc123def456..."
   },
   "signature": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A...",
-  "notes": [
-    "Fixed issue with launcher not displaying the config.ini",
-    "Fixed issue with playwright install"
-  ]
+  "notes": {
+    "Design": [
+      "Completely redesigned update dialog with animated gradient accents",
+      "New pulsing download icon with glow effects",
+      "Modernized changelog display with categorized sections",
+      "Added smooth indeterminate progress bar animation",
+      "Updated color palette to match new brand identity"
+    ],
+    "Functionality": [
+      "Added support for categorized release notes",
+      "Launcher now validates checksum before applying updates",
+      "Improved config.ini migration during updates",
+      "Added session-based update skip so declined updates won't re-prompt",
+      "Mandatory updates now block the close button"
+    ],
+    "Bug Fixes": [
+      "Fixed issue with launcher not displaying the config.ini",
+      "Fixed issue with playwright install",
+      "Resolved crash when update server is unreachable",
+      "Fixed drag-to-move not releasing on rapid clicks",
+      "Corrected version comparison failing on hotfix builds"
+    ],
+    "Performance": [
+      "Reduced update check timeout from 10s to 5s",
+      "Optimized changelog rendering for large release notes",
+      "Decreased memory usage during zip extraction"
+    ],
+    "Security": [
+      "Added SHA256 checksum verification for downloaded packages",
+      "Implemented signature validation for update payloads"
+    ]
+  }
 }
